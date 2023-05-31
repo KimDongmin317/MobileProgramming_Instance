@@ -1,7 +1,8 @@
-torch -i https://download.pytorch.org/whl/cu118
+torch -i https://download.pytorch.org/whl/cpu
 # torchvision -i https://download.pytorch.org/whl/cu118
 transformers==4.29.1
 flask==2.3.2
 pillow==9.5.0
 sentencepiece==0.1.99
 protobuf==3.20.3
+chardet

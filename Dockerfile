@@ -22,8 +22,6 @@ RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
 SHELL ["/bin/bash", "--login", "-c"]
 
 RUN conda init bash
-#pytorch which is stable, Linux, pip, python and CPU only
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 WORKDIR /app
 
