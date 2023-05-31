@@ -13,6 +13,10 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model.to(device)
 
+@app.route('/')
+def hello():
+    return 'Hi'
+
 @app.route('/process_invoice', methods=['POST'])
 def process_invoice():
     # Get the input image file from the request
